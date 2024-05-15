@@ -1,6 +1,15 @@
 // // Task #2
 // let personsName: string = "Sharjeel";
 // console.log(`Hello ${personsName}, would you like to learn some Python today?`);
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 // // Task #3
 // let secondPersonName : string = "ahmed"
 // console.log(secondPersonName.toLocaleUpperCase());
@@ -31,7 +40,7 @@
 // const date: string = Date();
 // console.log(`My namne is ${Myname} and today date is ${date}`);
 // Task #11
-var friends = ["Maaz", "Ali", "Shehbaz"];
+var friends = ["Maaz", "Ali", "Shehbaz", "Fahad", "Raza"];
 // friends.forEach((friend) => {
 //   console.log(friend);
 // });
@@ -60,4 +69,27 @@ var friends = ["Maaz", "Ali", "Shehbaz"];
 //   console.log(`${guest} ,You are invited for dinner`);
 // });
 // Task #16
-friends.unshift("heryy");
+// friends.unshift("heryy");
+// friends.push("Fahad")
+// friends.map((friend)=>{
+// console.log(`${friend} ,You are invited for dinner and you found a bigger table`);
+// })
+// Task #17
+// console.log("You can invite only two people for dinner.");
+// friends.map((friend , index,friends)=>{
+//     if (friends.length > 2) {
+//        const removedGuest =  friends.pop()
+//        console.log(`Sorry, ${removedGuest}, you're no longer invited to dinner.`);
+//     }
+// })
+// friends.forEach((friend) => {
+//     console.log(`${friend}, you're still invited.`);
+// });
+// friends.splice(0, friends.length); 
+// console.log(friends);
+// Task #18
+var places = ["Turkey", "Maldives", "America", "Qatar", "Thiland"];
+console.log(__spreadArray([], places, true).sort());
+console.log(places);
+console.log(__spreadArray([], places, true).sort().reverse());
+console.log(places);

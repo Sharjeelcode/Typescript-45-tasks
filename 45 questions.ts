@@ -47,7 +47,7 @@
 
 // Task #11
 
-const friends: string[] = ["Maaz", "Ali", "Shehbaz"];
+const friends: string[] = ["Maaz", "Ali", "Shehbaz", "Fahad", "Raza"];
 
 // friends.forEach((friend) => {
 //   console.log(friend);
@@ -89,4 +89,72 @@ const friends: string[] = ["Maaz", "Ali", "Shehbaz"];
 
 // Task #16
 
-friends.unshift("heryy");
+// friends.unshift("heryy");
+// friends.push("Fahad")
+
+// friends.map((friend)=>{
+// console.log(`${friend} ,You are invited for dinner and you found a bigger table`);
+// })
+
+// Task #17
+
+// console.log("You can invite only two people for dinner.");
+// friends.map((friend , index,friends)=>{
+//     if (friends.length > 2) {
+//        const removedGuest =  friends.pop()
+//        console.log(`Sorry, ${removedGuest}, you're no longer invited to dinner.`);
+//     }
+// })
+
+
+// friends.forEach((friend) => {
+//     console.log(`${friend}, you're still invited.`);
+// });
+
+// friends.splice(0, friends.length); 
+// console.log(friends);
+
+// Task #18
+
+const places: string[] = ["Turkey", "Maldives", "America", "Qatar", "Thiland"]
+
+console.log([...places].sort());
+console.log(places);
+console.log([...places].sort().reverse());
+console.log(places);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
